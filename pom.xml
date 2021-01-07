@@ -16,6 +16,10 @@
     <module>cloud-api-commons</module>
     <module>cloud-eureka-server-7001</module>
     <module>cloud-eureka-server-7002</module>
+      <module>cloud-provider-paymentzk8004</module>
+      <module>cloud-consumer-orderzk80</module>
+      <module>cloud-provider-paymentconsul8006</module>
+      <module>cloud-consumer-orderconsul80</module>
 
   </modules>
   <!--  表示为父工程-->
