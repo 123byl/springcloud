@@ -1,5 +1,6 @@
 package com.byl.springcloud.controller;
 
+
 import com.byl.springcloud.entities.CommonResult;
 import com.byl.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +14,8 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class OrderController {
-    public static final String PAYMENT_URL = "http://localhost:8001";
+    //通过在eureka注册的微服务名称调用
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
     @Resource
     private RestTemplate restTemplate;
 
