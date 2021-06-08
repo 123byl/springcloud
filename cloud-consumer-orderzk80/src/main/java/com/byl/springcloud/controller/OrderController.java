@@ -11,8 +11,9 @@ public class OrderController {
     public static final String INVOKE_URL = "http://cloud-provider-payment";
     @Resource
     public RestTemplate restTemplate;
+
     @GetMapping("/consumer/payment/zk")
     public String paymentInfo() {
-        return restTemplate.getForObject(INVOKE_URL+"/payment/zk", String.class);
+        return restTemplate.getForObject(INVOKE_URL + "/payment/zk", String.class);
     }
 }
