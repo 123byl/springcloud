@@ -26,6 +26,8 @@
         <module>cloud-provider-payment-eureka8001</module>
         <module>cloud-consumer-order-eureka80</module>
         <module>cloud-consumer-feign-Order80</module>
+        <module>cloud-consumer-hystrix-order80</module>
+        <module>cloud-consumer-hystrix-dashboard</module>
     </modules>
     <!--  表示为父工程-->
     <packaging>pom</packaging>
