@@ -1,0 +1,20 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/claybyl/springclound-config.git
+          search-paths:
+            - springcloud-config # 搜索目录
+      label: master # 读取分支
+eureka:
+  client:
+    service-url:
+      register-with-eureka: true
+      fetch-register: true
+      defaultZone: http://eureka7001.com:7001/eureka
